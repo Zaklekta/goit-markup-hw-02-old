@@ -1,11 +1,18 @@
 /* STYLES FOR INDEX.HTML */
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
 }
 :root {
   --titles-color: #212121;
   --text-color: #757575;
   --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --hero-footer-background: #2f303a;
+  --grey-background: #f5f4fa;
+  --portfolio-main-background: #f5f5f5;
+  --hero-btn-background: #188ce8;
 }
 .link {
   text-decoration: none;
@@ -21,7 +28,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: #000000;
+  color: var(--black-color);
 }
 .logo-first {
   color: var(--accent-color);
@@ -40,7 +47,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--text-color);
 }
 .nav-link:hover,
 .contacts-link:hover {
@@ -56,7 +63,7 @@ body {
 }
 /* HERO */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-background);
 }
 .hero-title {
   font-weight: 900;
@@ -66,7 +73,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--white-color);
 }
 .hero-btn {
   font-family: 'Roboto', sans-serif;
@@ -76,8 +83,12 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--accent-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hero-btn-background);
 }
 /* BENEFITS */
 .benefits-title {
@@ -110,7 +121,10 @@ body {
 }
 /* TEAM */
 .team {
-  background: #f5f4fa;
+  background: var(--grey-background);
+}
+.team-item {
+  background-color: var(--white-color);
 }
 .team-member-title {
   font-weight: 500;
@@ -130,10 +144,10 @@ body {
 }
 /* FOOTER */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-background);
 }
 .logo-second {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .address {
   font-style: normal;
@@ -144,12 +158,10 @@ body {
   line-height: 0.17;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--white-color);
 }
 /* STYLES FOR PORTFOLIO.HTML */
-.main {
-  background-color: #f5f5f5;
-}
+
 /* FILTERS */
 .filters-btn {
   font-family: 'Roboto', sans-serif;
@@ -161,6 +173,7 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--titles-color);
+  background-color: var(--grey-background);
 }
 .filters-btn:hover,
 .filters-btn:focus {
